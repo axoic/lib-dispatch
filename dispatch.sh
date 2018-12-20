@@ -3,14 +3,15 @@
 CURRENT_PATH=`pwd`
 SDK_VERSION=21
 PROJECT_NAME=dispatch
-GIT_URL=https://github.com/Fischiii/swift-corelibs-libdispatch.git
-GIT_BRANCH=testAndroid
+GIT_URL=https://github.com/apple/swift-corelibs-libdispatch.git
+GIT_BRANCH=master
 
 SRC="${CURRENT_PATH}/${PROJECT_NAME}-src"
 LIBS="${CURRENT_PATH}/libs"
 
 if [ ! -d "${ANDROID_NDK_HOME}" ]; then
     echo "ANDROID_NDK_HOME not defined or directory does not exist"
+    echo "Tested against android-ndk-r18b"
     exit 1
 fi
 

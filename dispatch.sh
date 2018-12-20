@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 CURRENT_PATH=`pwd`
 SDK_VERSION=21
